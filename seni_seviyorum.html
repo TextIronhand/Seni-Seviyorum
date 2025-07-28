@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Seni Seviyorum Çünkü...</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #cc0000;
+        }
+        #message {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #333;
+        }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seni Seviyorum Çünkü...</h1>
+    <div id="message">Butona tıkla 💖</div>
+    <button onclick="showReason()">Yeni Mesaj</button>
+
+    <script>
+        const reasons = [
+            "Seninle konuşmak bile huzur veriyor.",
+            "Gülüşün kadar güzel bişey görmedim.",
+            "her zaman beni destekliyosun en saçma hayalimde bile.",
+            "yanakların çoksel.",
+            "ellerin o kadar güzel ki satranç oynarken dikkatim dağılıyo.",
+            "Senin yanında kendim gibi olabiliyorum.",
+            "seninle bi ömür boyu satranç oynayabilirim.",
+            "çok güzel bakıyosun.",
+            "kokun bile bana huzur veriyo.",
+            "birlikte yürüdüğümüz sıkıcı sokaklar bile seninle anlam kazanıyo.",
+            "doğa bile seni benim karşıma çıkarıyo sürekli sanki birlikte olmamızı ister gibi.",
+            "renksiz hayatıma gökkuşağı gibi geldin öyle renk kattın bana.",
+            "sarılırken yaşadığım hisleri daha önce hiç yaşamamıştım.",
+            "bana değer veriyosun.",
+            "bana sevildiğimi hissettiriyosun."
+        ];
+
+        function showReason() {
+            const randomIndex = Math.floor(Math.random() * reasons.length);
+            document.getElementById("message").innerText = reasons[randomIndex];
+        }
+    </script>
+</body>
+</html>
